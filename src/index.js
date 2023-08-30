@@ -26,11 +26,10 @@ console.log(SEPARATOR + "\n");
           { title: "Guess the language from the description", value: "guess-description", },
         ]
     });
-
+    gameType = gameType["undefined"]; // idk why this is needed
     if (gameType === "guess-language") {
         await guessLanguage();
     } else if (gameType === "guess-description") {
         await guessDescription();
     }
-
 })()
